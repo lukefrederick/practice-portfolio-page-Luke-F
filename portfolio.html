@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Luke F's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Luke F's Portfolio</title>
+
 </head>
-<body>
-   <h1>Luke Frederick's HTML Portfolio!</h1>
-   <h2>About me</h2>
-<p>Hello! My name is Luke Frederick and I am a software engineering student with Launchcode. </p>
-<p>Here's a picture of my dog
-    <img src="DSCF1029.JPG" width ="160" alt="Tess baby">
-</p>
-    <h2>Skills</h2>
-        <table border="1">
+<header>
+    <h1>Luke Frederick's HTML Portfolio!</h1>
+</header>
+
+<div>
+
+    <body>
+
+        <h2>About me</h2>
+        <p class="p">Hello! My name is Luke Frederick and I am a software engineering student with Launchcode. I've
+            graduated from
+            the University of Missouri-St. Louis with
+            a degree in computer science and am currently working at Starbucks as a Shift Supervisor. I have experience
+            with multiple programming languages such as
+            C++, C, Java, JavaScript, and Python (working with TensorFlow, Keras, and Pandas). I have made projects such
+            as a top-down compiler, operating system simulators, and other personal projects.
+            Some of my hobbies include cooking, weightlifting, video games, and making music.
+        </p>
+        <div>
+            <p>Here's a picture of my dog!</p>
+            <p><img src="DSCF1029.JPG" width="400" alt="Tess baby"></p>
+        </div>
+        <h2>Skills</h2>
+        <table class="center-table" border=4>
             <caption>Programming Languages</caption>
             <tr>
                 <th>Language</th>
@@ -35,17 +53,25 @@
                 <td>JavaScript</td>
                 <td>0.3 Years</td>
             </tr>
-</table>
-    <h3>Contact me</h3>
+        </table>
+        <h3>Contact me</h3>
         <form action="/submit" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
-            <button type="submit">Submit</button>
-        </form>
-        <form action="/submit" method="POST">
-            <label for="name">E-mail:</label>
+            <br>
+            <label for="email">Email: </label>
             <input type="email" id="email" name="email">
+            <br>
             <button type="submit">Submit</button>
         </form>
-   </body>
+    </body>
+        </div>
+    <footer>
+        <p> 
+            Luke Frederick | <a href="https://github.com/lukefrederick/practice-portfolio-page-Luke-F" 
+            targets="_blank"> GitHub</a>
+        </p>
+    </footer>
+
+
 </html>
